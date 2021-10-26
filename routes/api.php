@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\HorarioController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::resource('horarios',HorarioController::class);
+Route::resource('tasks',TaskController::class);
 /*Route::get('horarios',[HorarioController::class,'index']);
 Route::post('horarios',[HorarioController::class,'store']);
 Route::get('horarios/{horario}',[HorarioController::class,'index']);
